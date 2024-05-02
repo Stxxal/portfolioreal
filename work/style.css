@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Helvetica;
+
+
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+
+    /* overflow: hidden */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+/* header {
+
+
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1;
+    /*extendable-2*/
+/* top: 2vh;
+    border-radius: 5px; */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1;
+    /*extendable-2*/
+    /* top: 2vh;
+    border-radius: 5px; */
+}
+
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+    /*extendable-2*/
+    /* border: rgb(54, 54, 54) solid 5px; */
+
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.6s;
+    padding: 0%;
+    height: 7vh;
+
+    left: 10%;
+}
+
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    font-weight: 700;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    right: 10%;
+    letter-spacing: 2px;
+    font-weight: 600px;
+    transition: 0.6%;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+/* Underline styles */
+a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hotpink;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    user-select: none;
+}
+
+.hero {
+    color: #fff;
+}
+
+.maintext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+
+    position: absolute;
+    width: 80%;
+    top: 40vh;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.textchev {
+    position: absolute;
+    width: 100%;
+    top: 87.5vh;
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 900;
+    color: #dddddd;
+
+
+}

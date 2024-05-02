@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+
+}
+
+.flexbox-container img {
+  align-self: center;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+
+  /* overflow: hidden */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+
+
+/* header {
+
+
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1;
+    /*extendable-2*/
+/* top: 2vh;
+    border-radius: 5px; */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 10;
+  /*extendable-2*/
+  /* top: 2vh;
+    border-radius: 5px; */
+}
+
+
+/* Underline styles */
+.headerenclosure a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+.headerenclosure a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  /* background-color: rgb(151, 255, 255); */
+  background-color: rgb(206, 203, 203);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.headerenclosure a:hover::after,
+.headerenclosure a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  /*extendable-2*/
+  /* border: rgb(54, 54, 54) solid 5px; */
+
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  transition: 0.6s;
+  padding: 0%;
+  height: 7vh;
+
+  left: 10%;
+}
+
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10%;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  font-weight: 700;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  right: 10%;
+  letter-spacing: 2px;
+  font-weight: 600px;
+  transition: 0.6%;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  height: 100vh;
+  width: 100%;
+  user-select: none;
+}
+
+.hero {
+  color: #fff;
+}
+
+.maintext {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+
+  position: absolute;
+  width: 80%;
+  top: 40vh;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 900;
+
+}
+
+.textchev {
+  position: absolute;
+
+  width: 100%;
+  top: 87.5vh;
+  font-size: 1vw;
+  text-align: center;
+
+  font-weight: 900;
+  color: #bdbdbd;
+
+
+}
+
+.learnmore:hover,
+.textchev:hover {
+  cursor: pointer;
+  color: rgb(197, 197, 197);
+  transition: 250ms;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+
+}
+
+
+.powered-by {
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+
+}
+
+.powered {
+  padding: -30px 0;
+
+  text-align: center;
+
+  margin: auto;
+  width: 60%;
+  font-size: 1.13em;
+  text-align: center;
+  color: #756F66;
+  line-height: 5vh;
+}
+
+.by {
+  position: relative;
+  margin-top: 0vh;
+  font-size: 2.3em;
+  color: #BAB2A9;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 15vh;
+  padding-bottom: 7vh;
+}
+
+.more-info {
+  height: 100vh;
+  top: 200vh;
+  position: absolute;
+  background-image: url('/images/macbigsurwallapaper.jpg');
+}
+
+
+.card {
+  top: 23vh;
+  width: fit-content;
+  height: fit-content;
+  background-color: #0D0F0F;
+  /*rgb(238, 238, 238)*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(34, 34, 34);
+  /*rgb(44, 44, 44)*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/*center the div .card horizontally*/
+
+
+
+
+.card {
+  left: 40vw;
+  position: relative;
+}
+
+h3 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 5vh;
+  padding: 7vh;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #fff;
+  margin: 20px auto;
+}
+
+.work-together {
+
+  height: 40vh;
+  top: 250vh;
+  width: 100%;
+  position: absolute;
+}
+
+.contact {
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  z-index: 999;
+  top: 0vh;
+  width: 100%;
+  position: absolute;
+
+  padding: 8vh;
+}
+
+.contact::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #fff;
+  margin: 20px auto;
+}
+
+.contact-small {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  z-index: 999;
+  top: 23vh;
+  width: 100%;
+  position: relative;
+  padding: 2vh;
+
+
+}
